@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="../main.css" />
+
+    <title>American Geosciences Institute: DONATE</title>
+</head>
+
+<body>
+    <header class="flex-navbar">
+        <div class="flex-navbar navbar-container">
+            <div class="flex-navbar flex-navbar-mobile">
+                <a href="../index.html" class="logo-box" id="myLogoBox">
+                    <img src="../Assets/agi_logo.png" alt="American Geosciences Institute Logo" id="logoImg"/>
+                </a>
+            
+                <div class="flex-navbar button-navbar-box-1" id="myNavbarButtons">
+                    <button id="buttonSMToggle">
+                        <img src="../Assets/share_icon.png" alt="Social media toggle button" id="toggleSMImg" />
+                    </button>
+        
+                    <button id="buttonNavbarToggle">
+                        <img src="../Assets/menu_toggle.png" alt="hamburger navbar toggle button" id="toggleNavbarImg" />
+                    </button>
+                </div>
+            </div>
+    
+            <nav class="flex-navbar" id="myFlexNavbarBox">
+                <ul class="flex-navbar" id="myFlexNavbarLinks">
+                    <li> <a href="About.html">ABOUT</a> </li>
+                    <li> <a href="Blog.html">ENGAGE</a> </li>
+                    <li class="active-link"> <a href="Donate.html">DONATE</a> </li>
+                </ul>
+            </nav>
+    
+            <div class="flex-navbar" id="mySMIconsBox">
+                <a href="https://www.facebook.com/americangeosciences" class="sm-icons" id="iconFacebook">
+                    <img src="../Assets/facebook_icon.png" alt="AGI Facebook link"/> 
+                </a>
+    
+                <a href="https://twitter.com/AGI_Updates" class="sm-icons" id="iconTwitter">
+                    <img src="../Assets/twitter_icon.jpg" alt="AGI Twitter link"/> 
+                </a>
+    
+                <a href="https://www.youtube.com/c/AmericanGeosciences" class="sm-icons" id="iconYoutube">
+                    <img src="../Assets/youtube_icon.png" alt="AGI Youtube link"/> 
+                </a>
+    
+                <a href="https://www.instagram.com/americangeosciences/" class="sm-icons" id="iconInstagram">
+                    <img src="../Assets/instagram_icon.png" alt="AGI Instagram link"/> 
+                </a>
+    
+                <a href="https://www.linkedin.com/company/the-american-geosciences-institute/" class="sm-icons" id="iconFacebook">
+                    <img src="../Assets/linkedin_icon.png" alt="AGI Linkedin link"/> 
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <main class="bg-height">
+        <div class="donate-container">
+            <div class="text-container donate-lrg-container lrg-container-1">
+                <h1>Donate Today!</h1>
+    
+                <p>AGI is proud that we have hundreds of loyal and generous donors supporting the power of the geosciences around the country and all over the world. It's because of donors like you that we're able to support many critical projects advancing the geosciences in local communities across the country!</p>
+
+                <p> Your generous gifts help AGI bring the geosciences to local and international communities, provide the latest educational materials to K-12 teachers nationwide, discover new employment trends for geoscience graduates, and help more graduate students experience AGI internships. You can help in a variety of meaningful ways.</p>
+                    
+                <h2>Please consider donating to one of AGI's designated funds:</h2>
+
+                <div class="fund-container">
+                    <form method="GET" action="">
+                        <label for="groupSelect">Select Fund:</label>
+                        <select id="groupSelect">
+                            <option>Select</option>
+                            <option value="fund">AGI General Fund</option>
+                            <option value="fund">Earth Science Week</option>
+                            <option value="fund">AGI Foundation</option>
+                            <option value="fund">AGI Keystone Fund</option>
+                            <option value="fund">Marcus Milling Legacy Campaign</option>
+                            <option value="fund">Harriet Evelyn Wallace Scholarship</option>
+                            <option value="fund">AGI Center for Geoscience & Society</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+
+            <div class="donate-lrg-container lrg-container-2">    
+                <div class="selection-container">
+                    <h2>Select an Amount:</h2>
+    
+                    <div class="amount-button-container">
+                        <a><button class="amount-button">$5</button></a>
+                        <a><button class="amount-button">$15</button></a>
+                        <a><button class="amount-button">$25</button></a>
+                        <a><button class="amount-button">$50</button></a>
+                        <a><button class="amount-button">$100</button></a>
+                    </div>
+                </div>
+    
+                <div class="form-container">
+                    <h2>Payment Method:</h2>
+    
+                    <div class="form-payment">
+                        <div class="pay-container">
+                            <button class="pay-button">Debit/Credit Card</button>
+                            <button class="pay-button">Paypal</button>
+                        </div>
+        
+                        <form action="action_page.php" method="POST">
+                            <label for="fn">Cardholder's Name:</label>
+                            <input type="text" class="f-name" id="fn" name="fullname" placeholder="Full Name on Card">
+                                              
+                            <label for="cn">Credit Card Number</label>
+                            <input type="text" class="card-number" id="cn" name="cardnumber" placeholder="XXXX-XXXX-XXXX-XXXX">
+        
+                            <label for="dateSelect">Expiration Date:</label>
+                            <select id="dateSelect">
+                                <option>Month</option>
+                                <option value="january">01</option>
+                                <option value="february">02</option>
+                                <option value="march">03</option>
+                                <option value="april">04</option>
+                                <option value="may">05</option>
+                                <option value="june">06</option>
+                                <option value="july">07</option>
+                                <option value="august">08</option>
+                                <option value="september">09</option>
+                                <option value="october">10</option>
+                                <option value="november">11</option>
+                                <option value="december">12</option>
+                            </select>
+        
+                            <select id="dateSelect">
+                                <option>Year</option>
+                                <option value="year1">2020</option>
+                                <option value="year2">2021</option>
+                                <option value="year3">2022</option>
+                                <option value="year4">2023</option>
+                                <option value="year5">2024</option>
+                                <option value="year6">2025</option>
+                                <option value="year7">2026</option>
+                                <option value="year8">2027</option>
+                                <option value="year9">2028</option>
+                                <option value="year10">2029</option>
+                                <option value="year11">2030</option>
+                            </select>
+        
+                            <label for="sc">Security Code</label>
+                            <input type="number" name="cvv" class="n-input" id="sc" placeholder="CVV">
+                        
+                            <label for="ea">Email Address</label>
+                            <input type="email" name="email" class="e-input" id="ea" id="EmailAddress" placeholder="jane_joe@gmail.com">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="complete-button-box">
+                    <button id="completeButton">Complete Payment</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="thankYouPage" class="thank-you-page">
+                <img src="../Assets/thank-you-img.jpg" alt="You're the Schist! (Image of schist rock.)" />
+
+            <div class="text-box">
+                <h1>Thank You For Your Contributon!</h1>
+
+                <h3>Your receipt is being mailed to the email you provided. Please keep it for your records.</h3>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="flex-footer footer-container">
+            <h3>The American Geosciences Institute (AGI) represents and serves the geoscience community by providing collaborative leadership and information to connect Earth, science, and people. <a href="https://www.americangeosciences.org/privacy-policy">Privacy Policy</a></h3>
+    
+            <p>Copyright © 2020. American Geosciences Institute. All rights reserved.</p>
+        </div> 
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
